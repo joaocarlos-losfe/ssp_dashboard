@@ -8,12 +8,11 @@ interface PanelItemsProps {
   onClick: () => void;
 }
 
-export default function NavbarItem({ isSelected, label, icon, onClick }: PanelItemsProps) {
+export default function PanelItem({ isSelected, label, icon, onClick }: PanelItemsProps) {
   return (
     <div
       className={`panel-item ${isSelected ? "selected" : ""}`}
       onClick={onClick}
-      style={{ cursor: "pointer" }}
     >
       <div className="pad" />
       <div className="label">

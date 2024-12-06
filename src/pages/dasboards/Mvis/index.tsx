@@ -3,13 +3,13 @@ import { AiOutlineHistory } from "react-icons/ai";
 
 import Layout from "../../../components/Layout";
 import PanelNavbar from "../../../components/PanelNavbar";
-import NavbarItem from "../../../components/PanelNavbar/NavbarItem";
+import PanelItem from "../../../components/PanelNavbar/PanelItem";
 import { useState, ReactNode } from "react";
 
 
 export default function MvisDasboard() {
 
-    const navbarPrimaryItems = [
+    const panelItems = [
         {
             label: "Distribuição espacial",
             icon: <FiMap />,
@@ -29,10 +29,10 @@ export default function MvisDasboard() {
 
     ];
 
-    const [selectedItemIndex, setItemIndex] = useState<number>(0);
+    const [selectedPanelItemIndex, setPanelItemIndex] = useState<number>(0);
 
-    const handleSelect = (index: number) => {
-        setItemIndex(index);
+    const onPanelItemSelect = (index: number) => {
+        setPanelItemIndex(index);
     };
 
     return (
@@ -41,19 +41,19 @@ export default function MvisDasboard() {
                 <PanelNavbar
                     title="Painel da Mulher"
                     items={
-                        navbarPrimaryItems.map((item, index) => (
-                            <NavbarItem
+                        panelItems.map((item, index) => (
+                            <PanelItem
                                 key={index}
-                                isSelected={selectedItemIndex === index}
+                                isSelected={selectedPanelItemIndex === index}
                                 label={item.label}
                                 icon={item.icon}
-                                onClick={() => handleSelect(index)}
+                                onClick={() => onPanelItemSelect(index)}
                             />
                         ))
                     }
                 />
             }
-            content={pages[selectedItemIndex]}
+            content={pages[selectedPanelItemIndex]}
         />
     );
 }
