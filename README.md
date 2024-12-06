@@ -1,3 +1,18 @@
+# Node Version and Start Project
+## Node Version
+v22.12.0
+
+## run project
+```bash
+npm run dev
+  
+  VITE v6.0.3  ready in 148 ms
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+```
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
