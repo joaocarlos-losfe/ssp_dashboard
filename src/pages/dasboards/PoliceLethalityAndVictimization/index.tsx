@@ -1,4 +1,4 @@
-export default function PolicyDasbards() {
+export default function PoliceLethalityAndVictimizationDasbard() {
     return (
         <div>letalidade e vitimizacao policial</div>
     )
