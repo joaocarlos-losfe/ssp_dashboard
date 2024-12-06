@@ -7,7 +7,7 @@ import NavbarItem from "../../../components/PanelNavbar/NavbarItem";
 import { useState, ReactNode } from "react";
 
 
-export default function MviDasboard() {
+export default function MvisDasboard() {
 
     const navbarPrimaryItems = [
         {
