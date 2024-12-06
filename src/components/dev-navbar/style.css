@@ -1,0 +1,7 @@
+#DevNavbar {
+    background-color: yellow;
+    padding: 8px 4px;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
