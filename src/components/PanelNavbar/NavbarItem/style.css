@@ -1,0 +1,49 @@
+.panel-item {
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.panel-item:hover {
+    background-color: var(--primary-hover-color-dark);
+}
+
+.panel-item .pad {
+    width: 8px;
+    height: 54px;
+    background-color: transparent;
+    margin-right: var(--spacing-large);
+    border-radius: 0px var(--border-radius-large) var(--border-radius-large) 0px;
+    transition: 0.3s linear;
+}
+
+.panel-item .label {
+    color: var(--text-color-dark);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-medium);
+    gap: var(--spacing-small);
+}
+
+.panel-item .icon {
+    font-size: var(--font-size-large);
+}
+
+.panel-item.selected {
+    background-color: #04301B;
+}
+
+.panel-item.selected .pad {
+    background-color: #bcee36;
+}
+
+.panel-item.selected .icon {
+    color: #bcee36;
+}

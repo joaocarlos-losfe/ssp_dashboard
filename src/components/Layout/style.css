@@ -1,0 +1,15 @@
+.layout {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #FBF9F9;
+
+}
+
+.layout .content {
+    margin: var(--spacing-large) var(--spacing-large) var(--spacing-large) 0px;
+    border: 2px solid var(--secondary-background-color);
+    width: 100%;
+    border-radius: var(--border-radius-large);
+}

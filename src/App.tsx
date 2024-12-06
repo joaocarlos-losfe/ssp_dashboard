@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import DevNavbar from './components/dev-navbar';
+import DevNavbar from './components/DevNavbar';
 
 import MviDasboard from './pages/dasboards/Mvis';
 import ViolenceAgainstWomenDashboard from './pages/dasboards/ViolenceAgainstWomen';
