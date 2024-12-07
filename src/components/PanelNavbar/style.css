@@ -15,3 +15,20 @@
     font-weight: bold;
     font-size: var(--font-size-large);
 }
+
+@media (max-width: 960px) {
+    .panel-navbar {
+        flex-direction: row;
+        justify-content: center;
+        height: 54px;
+        margin: 0px;
+        border-radius: 0px 0px 0px 0px;
+        padding: var(--spacing-medium);
+        width: 100%;
+
+    }
+
+    .panel-navbar h1 {
+        display: none;
+    }
+}

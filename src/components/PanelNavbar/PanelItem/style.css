@@ -1,5 +1,7 @@
 .panel-item {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     transition: 0.3s ease;
     cursor: pointer;
@@ -7,6 +9,7 @@
     transition: 0.3s ease;
     min-width: 300px;
     max-width: 300px;
+
 }
 
 .panel-item:hover {
@@ -20,6 +23,7 @@
     margin-right: var(--spacing-large);
     border-radius: 0px var(--border-radius-large) var(--border-radius-large) 0px;
     transition: 0.3s linear;
+
 }
 
 .panel-item .label {
@@ -37,13 +41,38 @@
 }
 
 .panel-item.selected {
-    background-color: #04301B;
+    background-color: var(--tertiary-background-color);
 }
 
 .panel-item.selected .pad {
-    background-color: #bcee36;
+    background-color: var(--primary-color);
 }
 
 .panel-item.selected .icon {
-    color: #bcee36;
+    color: var(--primary-color);
+}
+
+@media (max-width: 960px) {
+
+    .panel-item {
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        flex-direction: column;
+        min-width: 250px;
+
+    }
+
+    .panel-item .pad {
+        display: none;
+    }
+
+    .panel-item .label {
+        flex-direction: column;
+    }
+
+    .panel-item.selected .label {
+        color: var(--primary-color);
+    }
+
 }
