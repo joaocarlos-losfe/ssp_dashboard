@@ -9,6 +9,7 @@ import RobberiesAndThreftsDashboard from './pages/dasboards/RobberiesAndtThefts'
 
 import './styles/root.css';
 import './styles/main.css';
+//import './styles/seconday_style.css';
 
 function App() {
 

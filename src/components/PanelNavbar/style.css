@@ -1,6 +1,6 @@
 .panel-navbar {
     width: auto;
-    background-color: #022213;
+    background-color: var(--secondary-background-color);
     display: flex;
     flex-direction: column;
     margin: var(--spacing-large);

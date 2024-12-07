@@ -1,0 +1,27 @@
+:root {
+    --font-family-primary: "Inter", sans-serif;
+
+    --primary-color: #4F7EE3;
+
+    --primary-background-color: #FBF9F9;
+    --secondary-background-color: #509EE3;
+    --tertiary-background-color: #012313;
+
+    --primary-hover-color-dark: #4F7EE3;
+
+    --text-color-dark: #fff;
+    --text-color-light: #000000;
+
+
+    --font-size-small: 0.9rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 1.5rem;
+
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+
+    --border-radius-large: 8px;
+    --border-radius-large: 12px;
+    --border-radius-large: 24px
+}
