@@ -19,7 +19,7 @@
 @media (max-width: 960px) {
     .panel-navbar {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         height: 54px;
         margin: 0px;
         border-radius: 0px 0px 0px 0px;

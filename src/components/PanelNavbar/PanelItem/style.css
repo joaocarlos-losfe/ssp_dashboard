@@ -59,7 +59,7 @@
         justify-content: center;
         width: auto;
         flex-direction: column;
-        min-width: 250px;
+        min-width: auto;
 
     }
 
@@ -69,6 +69,12 @@
 
     .panel-item .label {
         flex-direction: column;
+        font-size: var(--font-size-small);
+    }
+
+    .panel-item .icon {
+        font-size: var(--font-size-medium);
+
     }
 
     .panel-item.selected .label {
